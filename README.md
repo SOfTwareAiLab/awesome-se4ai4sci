@@ -2,7 +2,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Last updated](https://img.shields.io/badge/updated-2026--10--08-blue.svg)](#contributing)
+[![Last updated](https://img.shields.io/badge/updated-2026--10--10-blue.svg)](#contributing)
 
 A curated list of papers, systems, benchmarks and resources on **Software Engineering for AI-Driven Science (SE4AISci)**: assuring the scientific process, not only the software that implements it.
 
@@ -10,15 +10,23 @@ A curated list of papers, systems, benchmarks and resources on **Software Engine
 
 ![The Scientific Assurance Chain](assets/chain.png)
 
-AI is beginning to do science, not just support it. Scientific agents can now design experiments, write and execute code, analyse results, and produce scientific conclusions. Yet a program can execute correctly while the experiment it implements is flawed or its conclusions unsupported. SE4AISci is an emerging research area for assuring scientific processes in which software participates in scientific decision-making. Its organising framework is the **Scientific Assurance Chain**, which connects intent, workflow, implementation, execution, evidence and claim, and which structures this list. Correct code is necessary, but trustworthy scientific claims require much more.
+AI is beginning to do science, not just support it. Software can now help choose methods, run experiments, interpret evidence and formulate scientific claims.
 
-## The Scientific Assurance Chain
-
-To structure the assurance problems within SE4AISci, the vision paper introduces the *Scientific Assurance Chain*:
+**SE4AISci** studies how software engineering can help make these scientific processes more explicit, checkable and traceable. Its organising framework is the **Scientific Assurance Chain**:
 
 <p align="center"><em>Intent &rarr; Workflow &rarr; Implementation &rarr; Execution &rarr; Evidence &rarr; Claim</em></p>
 
-Scientific intent is translated into a workflow, implemented and executed through software, and used to produce evidence supporting a scientific claim. Intent captures the scientific question and assumptions; workflow defines how that question will be investigated; implementation realises the workflow in software; execution runs it in a concrete environment; evidence captures the resulting observations; and claim interprets those observations scientifically. The abstraction is intentionally domain-general: the details differ across natural, computational and social sciences, but each must translate scientific intent into a process that ultimately supports a claim.
+Correct code is necessary, but trustworthy scientific claims require much more.
+
+## The Scientific Assurance Chain
+
+The chain captures the path from a scientific question to the claim ultimately produced from it. Each stage creates a different assurance problem, and failures can propagate even when later software behaves correctly.
+
+The sections below organise related work around three questions:
+
+- **Where it breaks** — documented failures in AI-driven scientific workflows.
+- **Existing foundations** — SE and scientific-computing techniques that could be adapted.
+- **SE4AISci work** — research directly targeting these assurance problems.
 
 | Stage | What is assured | SE techniques |
 |---|---|---|
