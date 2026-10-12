@@ -12,7 +12,9 @@ An entry qualifies if it does at least one of the following:
 - forms part of the SE4Science or research software engineering foundations that the agenda builds on;
 - is a benchmark or evaluation study of AI research agents.
 
-Not included: general LLM or agent papers with no scientific setting, mathematics-only systems (kept only as context), scientific software packages without a verified agent interface (these belong in [SOFTWARE.md](SOFTWARE.md), not in README), and items without a resolvable identifier or official page.
+The list is deliberately strict about what counts as in-field. Work with no scientific setting is included only when it is a primary reference for a technique the vision paper names for a chain stage or its research agenda, or when it applies LLMs or agents to such a technique (for example property-based testing, metamorphic testing, sandboxing, capability restriction or provenance). A few canonical surveys of neighbouring fields are kept under Foundations and Related Areas.
+
+Not included: general LLM, agent or AI-safety papers that only document model behaviour with no scientific setting, general code-generation benchmarks, misuse and biosecurity evaluations, science-knowledge question-answering benchmarks that do not exercise a research workflow, mathematics-only systems (kept only as context), scientific software packages without a verified agent interface (these belong in [SOFTWARE.md](SOFTWARE.md), not in README), and items without a resolvable identifier or official page.
 
 ## Where a chain entry goes
 

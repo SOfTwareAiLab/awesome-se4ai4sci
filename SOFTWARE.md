@@ -13,6 +13,7 @@ A catalogue of widely used scientific software packages, grouped by domain. It a
 - [High-energy and nuclear physics](#high-energy-and-nuclear-physics)
 - [Earth and climate](#earth-and-climate)
 - [Quantum computing](#quantum-computing)
+- [Usage and influence](#usage-and-influence)
 
 ## Visualization, imaging and statistics
 
@@ -178,6 +179,16 @@ A catalogue of widely used scientific software packages, grouped by domain. It a
 | PennyLane | Library for differentiable programming of quantum computers, quantum machine learning and quantum chemistry | [website](https://pennylane.ai/) [code](https://github.com/PennyLaneAI/pennylane) |
 | QuTiP | Quantum Toolbox in Python for simulating the dynamics of open and closed quantum systems | [website](https://qutip.org/) [code](https://github.com/qutip/qutip) |
 | Stim | Fast simulator for quantum stabilizer circuits, widely used in quantum error-correction research | [code](https://github.com/quantumlib/Stim) |
+
+## Usage and influence
+
+Studies of how scientific software is used and cited in the literature.
+
+- Exclusive: the most-cited papers of the twenty-first century (Nature 2025) [[paper]](https://doi.org/10.1038/d41586-025-01125-9)
+- A large dataset of software mentions in the biomedical literature (arXiv 2022) [[paper]](https://arxiv.org/abs/2209.00693)
+- The role of software in science: a knowledge graph-based analysis of software mentions in PubMed Central (PeerJ CS 2022) [[paper]](https://doi.org/10.7717/peerj-cs.835)
+- SoMeSci - A 5 Star Open Data Gold Standard Knowledge Graph of Software Mentions in Scientific Articles (CIKM 2021) [[paper]](https://doi.org/10.1145/3459637.3482017)
+- The top 100 papers (Nature 2014) [[paper]](https://doi.org/10.1038/514550a)
 
 ## License
 

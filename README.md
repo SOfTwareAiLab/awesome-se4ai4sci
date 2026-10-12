@@ -70,7 +70,6 @@ The sections below organise related work around three questions:
   - [Reproducibility, provenance and scientific workflows](#reproducibility-provenance-and-scientific-workflows)
   - [SE for ML-based systems and LLM4SE](#se-for-ml-based-systems-and-llm4se)
   - [Scientific software](#scientific-software)
-  - [Scientific software usage and influence](#scientific-software-usage-and-influence)
   - [Venues and communities](#venues-and-communities)
   - [Related awesome lists](#related-awesome-lists)
 - [Contributing](#contributing)
@@ -95,14 +94,11 @@ The sections below organise related work around three questions:
 
 - Many AI analysts, one dataset: Navigating the agentic data science multiverse (PNAS 2026) [[paper]](https://doi.org/10.1073/pnas.2606495123)
 - Nonstandard Errors in AI Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2603.16744)
-- Quantifying Overclaiming Propensity in Frontier LLM Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2609.20812)
 - The Agentic Garden of Forking Paths (arXiv 2026) [[paper]](https://arxiv.org/abs/2607.01507)
 - AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution (Cell 2025) [[paper]](https://doi.org/10.1016/j.cell.2025.08.018)
-- Technical Report: Evaluating Goal Drift in Language Model Agents (arXiv 2025) [[paper]](https://arxiv.org/abs/2505.02709)
 
 **Existing foundations**
 
-- Exploring the Garden of Forking Paths in Empirical Software Engineering Research: A Multiverse Analysis (TOSEM 2026) [[paper]](https://doi.org/10.1145/3799711)
 - RDoFlow: Automatically assessing under-specified statistical analyses in HCI (IUI 2026) [[paper]](https://doi.org/10.1145/3742413.3789160)
 - Requirements Engineering for Research Software: A Vision (RE 2024) [[paper]](https://doi.org/10.1109/RE59067.2024.00050)
 - rTisane: Externalizing conceptual models for data analysis prompts reconsideration of domain assumptions and facilitates statistical modeling (CHI 2024) [[paper]](https://doi.org/10.1145/3613904.3642267) [[code]](https://github.com/tea-lang-org/rTisane)
@@ -137,7 +133,6 @@ The sections below organise related work around three questions:
 
 **Existing foundations**
 
-- Kernel Contracts: A Specification Language for ML Kernel Correctness Across Heterogeneous Silicon (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.22032)
 - Towards Generating Contracts for Scientific Data Analysis Workflows (SC24-W 2024) [[paper]](https://doi.org/10.1109/SCW63240.2024.00256)
 - Boba: Authoring and Visualizing Multiverse Analyses (IEEE TVCG 2021) [[paper]](https://doi.org/10.1109/TVCG.2020.3028985) [[code]](https://github.com/uwdata/boba)
 - Designing and deploying online field experiments (WWW 2014) [[paper]](https://doi.org/10.1145/2566486.2567967) [[code]](https://github.com/facebookarchive/planout)
@@ -155,31 +150,19 @@ The sections below organise related work around three questions:
 - Evaluating LLM-generated code for domain-specific languages: Molecular dynamics with LAMMPS (Computational Materials Science 2026) [[paper]](https://doi.org/10.1016/j.commatsci.2026.114839)
 - EXP-Bench: Can AI Conduct AI Research Experiments? (ICLR 2026) [[paper]](https://arxiv.org/abs/2505.24785) [[code]](https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench)
 - Generated, Parallel, Scalable? A Study of Agentic AI-Generated Julia Code on Supercomputers (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.16534)
-- Proof or Bluff? Evaluating LLMs on 2025 USA Math Olympiad (arXiv 2025) [[paper]](https://arxiv.org/abs/2503.21934)
 - Can Large Language Models Write Parallel Code? (HPDC 2024) [[paper]](https://doi.org/10.1145/3625549.3658689) [[code]](https://github.com/parallelcodefoundry/ParEval)
 
 **Existing foundations**
 
-- AI-Generated Code Is Not Reproducible (Yet): An Empirical Study of Execution Reliability in LLM-Based Coding Agents (ACM REP 2026) [[paper]](https://doi.org/10.1145/3820002.3828581)
-- Are "Solved Issues" in SWE-bench Really Solved Correctly? An Empirical Study (ICSE 2026) [[paper]](https://doi.org/10.1145/3744916.3764576)
 - Enhancing Understandability and Transparency of Research Software: Tracing Research to Code (SERS@ICSE 2026) [[paper]](https://doi.org/10.1145/3786172.3788363)
-- Library Hallucinations in LLM-Generated Code: A Risk Analysis Grounded in Developer Queries (EMNLP 2026) [[paper]](https://arxiv.org/abs/2509.22202)
 - PBT-Bench: Benchmarking AI Agents on Property-Based Testing (NeurIPS 2026) [[paper]](https://arxiv.org/abs/2605.15229)
-- A benchmark for vericoding: formally verified program synthesis (arXiv 2025) [[paper]](https://arxiv.org/abs/2509.22908) [[code]](https://github.com/Beneficial-AI-Foundation/vericoding-benchmark)
 - Agentic Property-Based Testing: Finding Bugs Across the Python Ecosystem (NeurIPS Workshop 2025) [[paper]](https://arxiv.org/abs/2510.09907) [[code]](https://github.com/mmaaz-git/agentic-pbt)
-- An Empirical Study of the Non-Determinism of ChatGPT in Code Generation (TOSEM 2025) [[paper]](https://doi.org/10.1145/3697010)
 - Can Large Language Models Discover Metamorphic Relations? A Large-Scale Empirical Study (SANER 2025) [[paper]](https://doi.org/10.1109/SANER64311.2025.00011)
 - Do LLMs Generate Useful Test Oracles? An Empirical Study with an Unbiased Dataset (ASE 2025) [[paper]](https://doi.org/10.1109/ASE63991.2025.00031)
-- KernelBench: Can LLMs Write Efficient GPU Kernels? (ICML 2025) [[paper]](https://arxiv.org/abs/2502.10517) [[code]](https://github.com/ScalingIntelligence/KernelBench)
 - Metamorphic Testing on Scientific Programs for Solving Second-Order Elliptic Differential Equations (STVR 2025) [[paper]](https://doi.org/10.1002/stvr.1912)
-- We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs (USENIX Security 2025) [[paper]](https://arxiv.org/abs/2406.10279)
-- Automated Unit Test Improvement using Large Language Models at Meta (FSE Industry 2024) [[paper]](https://doi.org/10.1145/3663529.3663839)
-- Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code (ICSE 2024) [[paper]](https://doi.org/10.1145/3597503.3639226)
 - Using Assurance Cases to Guide Verification and Validation of Research Software (arXiv 2024) [[paper]](https://arxiv.org/abs/2411.03291)
 - Generating Software for Well-Understood Domains (arXiv 2023) [[paper]](https://arxiv.org/abs/2302.00740) [[code]](https://github.com/JacquesCarette/Drasil)
-- Is Your Code Generated by ChatGPT Really Correct? Rigorous Evaluation of Large Language Models for Code Generation (NeurIPS 2023) [[paper]](https://arxiv.org/abs/2305.01210) [[code]](https://github.com/evalplus/evalplus)
 - Numerical uncertainty in analytical pipelines lead to impactful variability in brain networks (PLOS ONE 2021) [[paper]](https://doi.org/10.1371/journal.pone.0250755)
-- CRADLE: Cross-Backend Validation to Detect and Localize Bugs in Deep Learning Libraries (ICSE 2019) [[paper]](https://doi.org/10.1109/ICSE.2019.00107)
 - Metamorphic Testing: A Simple Yet Effective Approach for Testing Scientific Software (CiSE 2019) [[paper]](https://doi.org/10.1109/MCSE.2018.2875368)
 - A new ensemble-based consistency test for the Community Earth System Model (pyCECT v1.0) (GMD 2015) [[paper]](https://doi.org/10.5194/gmd-8-2829-2015) [[code]](https://github.com/NCAR/PyCECT)
 - The Oracle Problem in Software Testing: A Survey (TSE 2015) [[paper]](https://doi.org/10.1109/TSE.2014.2372785)
@@ -200,38 +183,16 @@ The sections below organise related work around three questions:
 
 **Where it breaks**
 
-- A Blind Spot in Alignment: Quantifying Biosecurity Risks in Large Language Models (COLM 2026) [[paper]](https://arxiv.org/abs/2608.02684) [[code]](https://github.com/PKU-Alignment/SPIKE-Bench)
 - Benchmarking large language models on safety risks in scientific laboratories (Nature Machine Intelligence 2026) [[paper]](https://doi.org/10.1038/s42256-025-01152-1)
-- Incomplete Tasks Induce Shutdown Resistance in Some Frontier LLMs (TMLR 2026) [[paper]](https://arxiv.org/abs/2509.14260)
-- Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use (ICML 2026) [[paper]](https://arxiv.org/abs/2605.02964)
-- SoSBench: Benchmarking Safety Alignment on Six Scientific Domains (ICLR 2026) [[paper]](https://arxiv.org/abs/2505.21605)
-- Claude 3.7 Sonnet System Card (Anthropic 2025) [[paper]](https://www.anthropic.com/claude-3-7-sonnet-system-card)
-- Details about METR's preliminary evaluation of OpenAI's o3 and o4-mini (METR 2025) [[paper]](https://metr.org/evaluations/openai-o3-report/)
-- ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases (arXiv 2025) [[paper]](https://arxiv.org/abs/2510.20270) [[code]](https://github.com/safety-research/impossiblebench)
-- Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation (arXiv 2025) [[paper]](https://arxiv.org/abs/2503.11926)
-- Recent Frontier Models Are Reward Hacking (METR 2025) [[paper]](https://metr.org/blog/2025-06-05-recent-reward-hacking)
-- Strengthening nucleic acid biosecurity screening against generative protein design tools (Science 2025) [[paper]](https://doi.org/10.1126/science.adu8578)
-- Virology Capabilities Test (VCT): A Multimodal Virology Q&A Benchmark (arXiv 2025) [[paper]](https://arxiv.org/abs/2504.16137)
-- Frontier Models are Capable of In-context Scheming (arXiv 2024) [[paper]](https://arxiv.org/abs/2412.04984)
-- OpenAI o1 System Card (OpenAI 2024) [[paper]](https://cdn.openai.com/o1-system-card.pdf)
 - The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (arXiv 2024) [[paper]](https://arxiv.org/abs/2408.06292) [[code]](https://github.com/SakanaAI/AI-Scientist)
-- Defining and Characterizing Reward Hacking (NeurIPS 2022) [[paper]](https://arxiv.org/abs/2209.13085)
-- Specification gaming: the flip side of AI ingenuity (DeepMind 2020) [[paper]](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/)
 
 **Existing foundations**
 
 - Automated Modernization of Machine Learning Engineering Notebooks for Reproducibility (Proceedings of the ACM on Software Engineering 2026) [[paper]](https://doi.org/10.1145/3832166)
 - Containing the Reproducibility Gap: Automated Repository-Level Containerization for Scholarly Jupyter Notebooks (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.01072)
 - Progent: Securing AI Agents with Privilege Control (arXiv 2026) [[paper]](https://arxiv.org/abs/2504.11703)
-- Ctrl-Z: Controlling AI Agents via Resampling (arXiv 2025) [[paper]](https://arxiv.org/abs/2504.10374)
 - Defeating Prompt Injections by Design (arXiv 2025) [[paper]](https://arxiv.org/abs/2503.18813) [[code]](https://github.com/google-research/camel-prompt-injection)
-- Does Functional Package Management Enable Reproducible Builds at Scale? Yes. (MSR 2025) [[paper]](https://doi.org/10.1109/MSR66628.2025.00115)
-- EnvBench: A Benchmark for Automated Environment Setup (ICLR DL4C Workshop 2025) [[paper]](https://arxiv.org/abs/2503.14443) [[code]](https://github.com/JetBrains-Research/EnvBench)
-- Repo2Run: Automated Building Executable Environment for Code Repository at Scale (NeurIPS 2025) [[paper]](https://doi.org/10.52202/085713-1096) [[code]](https://github.com/bytedance/Repo2Run)
 - SandboxEval: Towards Securing Test Environment for Untrusted Code (arXiv 2025) [[paper]](https://arxiv.org/abs/2504.00018)
-- SetupBench: Assessing Software Engineering Agents' Ability to Bootstrap Development Environments (arXiv 2025) [[paper]](https://arxiv.org/abs/2507.09063) [[code]](https://github.com/microsoft/SetupBench)
-- Identifying the Risks of LM Agents with an LM-Emulated Sandbox (arXiv 2024) [[paper]](https://arxiv.org/abs/2309.15817)
-- RedCode: Risky Code Execution and Generation Benchmark for Code Agents (NeurIPS Datasets and Benchmarks 2024) [[paper]](https://arxiv.org/abs/2411.07781)
 - Assessing and restoring reproducibility of Jupyter notebooks (ASE 2020) [[paper]](https://doi.org/10.1145/3324884.3416585)
 - Singularity: Scientific containers for mobility of compute (PLOS ONE 2017) [[paper]](https://doi.org/10.1371/journal.pone.0177459)
 - An introduction to Docker for reproducible research (ACM SIGOPS Operating Systems Review 2015) [[paper]](https://doi.org/10.1145/2723872.2723882)
@@ -255,11 +216,8 @@ The sections below organise related work around three questions:
 - Plausible but Wrong: A case study on Agentic Failures in Astrophysical Workflows (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.25345)
 - PlotGround: Grounding Plot Digitization in Real Scientific Figures and Their Source Data (arXiv 2026) [[paper]](https://arxiv.org/abs/2610.06825)
 - SciIntegrity-Bench: A Benchmark for Evaluating Academic Integrity in AI Scientist Systems (arXiv 2026) [[paper]](https://arxiv.org/abs/2605.10246) [[code]](https://github.com/liuxingtong/Sci-Integrity-Bench)
-- A framework for evaluating the chemical knowledge and reasoning abilities of large language models against the expertise of chemists (Nature Chemistry 2025) [[paper]](https://doi.org/10.1038/s41557-025-01815-x)
 - Artificial Intelligence-Assisted Data Extraction With a Large Language Model: A Study Within Reviews (Annals of Internal Medicine 2025) [[paper]](https://doi.org/10.7326/ANNALS-25-00739)
-- The Leaderboard Illusion (NeurIPS 2025) [[paper]](https://arxiv.org/abs/2504.20879)
 - CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs (NeurIPS 2024) [[paper]](https://arxiv.org/abs/2406.18521) [[code]](https://github.com/princeton-nlp/CharXiv)
-- Questionable practices in machine learning (arXiv 2024) [[paper]](https://arxiv.org/abs/2407.12220)
 
 **Existing foundations**
 
@@ -276,7 +234,6 @@ The sections below organise related work around three questions:
 
 - Verifying LLM-extracted text with token alignment (bioRxiv 2026) [[paper]](https://doi.org/10.64898/2026.02.06.704502)
 - ControlA: Agentic Workflow Control Mechanisms for Reliable Science (eScience 2025) [[paper]](https://doi.org/10.1109/eScience65000.2025.00086)
-- Evidence triangulator: using large language models to extract and synthesize causal evidence across study designs (Nature Communications 2025) [[paper]](https://doi.org/10.1038/s41467-025-62783-x)
 - Leveraging Vision Capabilities of Multimodal LLMs for Automated Data Extraction from Plots (arXiv 2025) [[paper]](https://arxiv.org/abs/2503.12326)
 - PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions in Agentic Workflows (eScience 2025) [[paper]](https://doi.org/10.1109/eScience65000.2025.00093) [[code]](https://github.com/ORNL/flowcept)
 - Extracting accurate materials data from research papers with conversational language models and prompt engineering (Nature Communications 2024) [[paper]](https://doi.org/10.1038/s41467-024-45914-8)
@@ -297,15 +254,10 @@ The sections below organise related work around three questions:
 - Phantom References: Hallucinated Citations That Survive Peer Review at Top-Tier Conferences (arXiv 2026) [[paper]](https://arxiv.org/abs/2607.00738)
 - Position: Correct Answer, Wrong Mechanism, When AI Scientists Defend General Claims Their Own Data Contradicts (ICML AI for Science Workshop 2026) [[paper]](https://arxiv.org/abs/2606.23175)
 - Automatic Reviewers Fail to Detect Faulty Reasoning in Research Papers: A New Counterfactual Evaluation Framework (TACL 2025) [[paper]](https://arxiv.org/abs/2508.21422)
-- BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs (arXiv 2025) [[paper]](https://arxiv.org/abs/2510.04721)
 - DeepTRACE: Auditing Deep Research AI Systems for Tracking Reliability Across Citations and Evidence (arXiv 2025) [[paper]](https://arxiv.org/abs/2509.04499)
-- Delving into LLM-assisted writing in biomedical publications through excess vocabulary (Science Advances 2025) [[paper]](https://doi.org/10.1126/sciadv.adt3813)
 - Explosion of formulaic research articles, including inappropriate study designs and false discoveries, based on the NHANES US national health database (PLOS Biology 2025) [[paper]](https://doi.org/10.1371/journal.pbio.3003152)
 - Generalization bias in large language model summarization of scientific research (Royal Society Open Science 2025) [[paper]](https://doi.org/10.1098/rsos.241776)
 - Challenges in High-Throughput Inorganic Materials Prediction and Autonomous Synthesis (PRX Energy 2024) [[paper]](https://doi.org/10.1103/PRXEnergy.3.011002)
-- Monitoring AI-Modified Content at Scale: A Case Study on the Impact of ChatGPT on AI Conference Peer Reviews (ICML 2024) [[paper]](https://arxiv.org/abs/2403.07183)
-- Fabrication and errors in the bibliographic citations generated by ChatGPT (Scientific Reports 2023) [[paper]](https://doi.org/10.1038/s41598-023-41032-5)
-- Large Language Model Advanced Data Analysis Abuse to Create a Fake Data Set in Medical Research (JAMA Ophthalmology 2023) [[paper]](https://doi.org/10.1001/jamaophthalmol.2023.5162)
 
 **Existing foundations**
 
@@ -337,7 +289,6 @@ The sections below organise related work around three questions:
 
 - Agentic AI and the rise of in silico team science in biomedical research (Nature Biotechnology 2026) [[paper]](https://doi.org/10.1038/s41587-026-03035-1)
 - Agentic AI Scientists Are Not Built For Autonomous Scientific Discovery (NeurIPS 2026) [[paper]](https://arxiv.org/abs/2605.08956)
-- AI for scientific discovery is a social problem (Patterns 2026) [[paper]](https://doi.org/10.1016/j.patter.2026.101497)
 - Automated Scientific Discovery: From Equation Discovery to Autonomous Discovery Systems (Machine Learning 2026) [[paper]](https://doi.org/10.1007/s10994-025-06955-2)
 - Conjecture Machines: AI Agents and the New Validation Bottleneck in Science (Google DeepMind 2026) [[paper]](https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science/)
 - The Age of AI Agents Demands A New Scientific Paradigm To Sustain Trustworthy Science (ICML 2026) [[paper]](https://arxiv.org/abs/2607.26064)
@@ -358,19 +309,13 @@ The sections below organise related work around three questions:
 
 - AI Research Agents Narrow Scientific Exploration (arXiv 2026) [[paper]](https://arxiv.org/abs/2605.27905)
 - Artificial intelligence tools expand scientists' impact but contract science's focus (Nature 2026) [[paper]](https://doi.org/10.1038/s41586-025-09922-y)
-- A European Strategy for Artificial Intelligence in Science: Paving the way for the Resource for AI Science in Europe (RAISE) (European Commission COM(2025) 724 2025) [[paper]](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0724)
-- AI for Science Strategy (UK DSIT policy paper 2025) [[paper]](https://www.gov.uk/government/publications/ai-for-science-strategy/ai-for-science-strategy)
-- Launching the Genesis Mission (US Executive Order 14363 2025) [[paper]](https://www.federalregister.gov/documents/2025/11/28/2025-21665/launching-the-genesis-mission)
 - Scientific production in the era of large language models (Science 2025) [[paper]](https://doi.org/10.1126/science.adw3000)
-- A New Golden Age of Discovery (Google DeepMind essay 2024) [[paper]](https://deepmind.google/public-policy/ai-for-science/)
 - Quantifying the use and potential benefits of artificial intelligence in scientific research (Nature Human Behaviour 2024) [[paper]](https://doi.org/10.1038/s41562-024-02020-5)
 - Science in the age of AI: How artificial intelligence is changing the nature and method of scientific research (Royal Society report 2024) [[paper]](https://royalsociety.org/news-resources/projects/science-in-the-age-of-ai/)
-- Supercharging Research: Harnessing Artificial Intelligence to Meet Global Challenges (PCAST report 2024) [[paper]](https://bidenwhitehouse.archives.gov/pcast/briefing-room/2024/04/29/pcast-releases-report-on-supercharging-research-harnessing-artificial-intelligence-to-meet-global-challenges/)
 - Automated Research Workflows for Accelerated Discovery (National Academies 2022) [[paper]](https://doi.org/10.17226/26532)
 
 ### End-to-end AI scientists
 
-- Claude Science, an AI workbench for scientists (Anthropic 2026) [[website]](https://www.anthropic.com/news/claude-science-ai-workbench)
 - FARS: A Fully Automated Research System Deployed at Scale (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.31651)
 - Jr. AI Scientist and Its Risk Report: Autonomous Scientific Exploration from a Baseline Paper (TMLR 2026) [[paper]](https://arxiv.org/abs/2511.04583) [[code]](https://github.com/Agent4Science-UTokyo/Jr.AI-Scientist)
 - ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence (arXiv 2026) [[paper]](https://arxiv.org/abs/2605.26340)
@@ -406,11 +351,9 @@ The sections below organise related work around three questions:
 - CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.01658) [[code]](https://github.com/Human-Agent-Society/CORAL)
 - Harnessing the Collective Intelligence of AI Agents in the Wild for New Discoveries (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.10402)
 - AlphaEvolve: A coding agent for scientific and algorithmic discovery (arXiv 2025) [[paper]](https://arxiv.org/abs/2506.13131) [[code]](https://github.com/google-deepmind/alphaevolve_results)
-- Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents (arXiv 2025) [[paper]](https://arxiv.org/abs/2505.22954) [[code]](https://github.com/jennyzzt/dgm)
 - LLM-SR: Scientific Equation Discovery via Programming with Large Language Models (ICLR 2025) [[paper]](https://arxiv.org/abs/2404.18400) [[code]](https://github.com/deep-symbolic-mathematics/LLM-SR)
 - ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution (arXiv 2025) [[paper]](https://arxiv.org/abs/2509.19349) [[code]](https://github.com/SakanaAI/ShinkaEvolve)
 - The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies (Nature 2025) [[paper]](https://doi.org/10.1038/s41586-025-09442-9) [[code]](https://github.com/zou-group/virtual-lab)
-- Faster sorting algorithms discovered using deep reinforcement learning (Nature 2023) [[paper]](https://doi.org/10.1038/s41586-023-06004-9)
 - Mathematical discoveries from program search with large language models (Nature 2023) [[paper]](https://doi.org/10.1038/s41586-023-06924-6) [[code]](https://github.com/google-deepmind/funsearch)
 
 ### Domain-specific agents
@@ -509,11 +452,8 @@ The sections below organise related work around three questions:
 
 - BioFlowBench: A Comprehensive Benchmark for Evaluating Bioinformatics Tool-use Capabilities of LLMs and Agents (KDD 2026) [[paper]](https://doi.org/10.1145/3770855.3817576)
 - DEEPCHART: How Far are LLMs from Faithful Data-Science Chart Generation? (arXiv 2026) [[paper]](https://arxiv.org/abs/2608.26757)
-- Do Tool Calls Execute as Intended? Measuring and Repairing Intent-Execution Correspondence in LLM Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2610.04375)
 - OSWorld-Science: A Benchmark of Computer Use Agents for Learning and Using Scientific Software (arXiv 2026) [[paper]](https://arxiv.org/abs/2609.39903)
 - ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows (ICLR 2026) [[paper]](https://openreview.net/forum?id=bJvwJahJeF) [[code]](https://github.com/OS-Copilot/ScienceBoard)
-- SilentProbe: Measuring Silent Failure in Production APIs Used as Agent Tools (arXiv 2026) [[paper]](https://arxiv.org/abs/2609.00035)
-- From REST to MCP: An Empirical Study of API Wrapping and Automated Server Generation for LLM Agents (arXiv 2025) [[paper]](https://arxiv.org/abs/2507.16044)
 - Tooling or Not Tooling? The Impact of Tools on Language Agents for Chemistry Problem Solving (Findings of NAACL 2025) [[paper]](https://doi.org/10.18653/v1/2025.findings-naacl.424)
 
 ## Benchmarks and Evaluation
@@ -571,7 +511,6 @@ The sections below organise related work around three questions:
 - ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery (ICLR 2025) [[paper]](https://arxiv.org/abs/2410.05080) [[code]](https://github.com/OSU-NLP-Group/ScienceAgentBench)
 - BioCoder: a benchmark for bioinformatics code generation with large language models (Bioinformatics 2024) [[paper]](https://doi.org/10.1093/bioinformatics/btae230) [[code]](https://github.com/gersteinlab/biocoder)
 - SciCode: A Research Coding Benchmark Curated by Scientists (NeurIPS 2024) [[paper]](https://arxiv.org/abs/2407.13168) [[code]](https://github.com/scicode-bench/SciCode)
-- DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation (ICML 2023) [[paper]](https://arxiv.org/abs/2211.11501)
 
 ### Data-driven discovery and analysis
 
@@ -586,37 +525,30 @@ The sections below organise related work around three questions:
 - TxBench-PP: Analyzing AI Agent Performance on Small-Molecule Preclinical Pharmacology (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.19245)
 - BixBench: a Comprehensive Benchmark for LLM-based Agents in Computational Biology (arXiv 2025) [[paper]](https://arxiv.org/abs/2503.00096) [[code]](https://github.com/Future-House/BixBench)
 - DiscoveryBench: Towards Data-Driven Discovery with Large Language Models (ICLR 2025) [[paper]](https://arxiv.org/abs/2407.01725) [[code]](https://github.com/allenai/discoverybench)
-- DSBench: How Far Are Data Science Agents from Becoming Data Science Experts? (ICLR 2025) [[paper]](https://arxiv.org/abs/2409.07703) [[code]](https://github.com/LiqiangJing/DSBench)
 - LLM-SRBench: A New Benchmark for Scientific Equation Discovery with Large Language Models (ICML 2025) [[paper]](https://arxiv.org/abs/2504.10415) [[code]](https://github.com/deep-symbolic-mathematics/llm-srbench)
 - Are Large Language Models Good Statisticians? (NeurIPS Datasets and Benchmarks 2024) [[paper]](https://arxiv.org/abs/2406.07815)
 - BLADE: Benchmarking Language Model Agents for Data-Driven Science (Findings of EMNLP 2024) [[paper]](https://aclanthology.org/2024.findings-emnlp.815/) [[code]](https://github.com/behavioral-data/BLADE)
-- DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models (EMNLP 2024) [[paper]](https://doi.org/10.18653/v1/2024.emnlp-main.748) [[code]](https://github.com/yiyihum/da-code)
 - DISCOVERYWORLD: A Virtual Environment for Developing and Evaluating Automated Scientific Discovery Agents (NeurIPS Datasets and Benchmarks 2024) [[paper]](https://arxiv.org/abs/2406.06769) [[code]](https://github.com/allenai/discoveryworld)
 
 ### Laboratory, protocol and ideation
 
 - BenchBench-Protocol: Evaluating Real-World Wet-Lab Protocol Reasoning and Modification (arXiv 2026) [[paper]](https://arxiv.org/abs/2608.23898)
 - From Scientific Observations to Mechanisms: Benchmarking Hypothesis Generation by AI Scientists (arXiv 2026) [[paper]](https://arxiv.org/abs/2610.05197)
-- FrontierScience: Evaluating AI's Ability to Perform Expert-Level Scientific Tasks (arXiv 2026) [[paper]](https://arxiv.org/abs/2601.21165)
 - LABBench2: An Improved Benchmark for AI Systems Performing Biology Research (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.09554) [[code]](https://github.com/EdisonScientific/labbench2)
 - ResearchBench: Benchmarking LLMs in Scientific Discovery via Inspiration-Based Task Decomposition (Findings of ACL 2026) [[paper]](https://doi.org/10.18653/v1/2026.findings-acl.644)
 - SciPredict: Can LLMs Predict the Outcomes of Scientific Experiments in Natural Sciences? (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.10718)
 - Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers (ICLR 2025) [[paper]](https://arxiv.org/abs/2409.04109)
-- Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark (arXiv 2025) [[paper]](https://arxiv.org/abs/2509.26574)
 - The Ideation-Execution Gap: Execution Outcomes of LLM-Generated versus Human Research Ideas (arXiv 2025) [[paper]](https://arxiv.org/abs/2506.20803)
 - BioLP-bench: Measuring understanding of biological lab protocols by large language models (bioRxiv 2024) [[paper]](https://doi.org/10.1101/2024.08.21.608694) [[code]](https://github.com/baceolus/BioLP-bench)
 - BioPlanner: Automatic Evaluation of LLMs on Protocol Planning in Biology (EMNLP 2023) [[paper]](https://doi.org/10.18653/v1/2023.emnlp-main.162) [[code]](https://github.com/bioplanner/bioplanner)
 
 ### Evaluation methodology
 
-- Agent Evaluation Reliability: More Tasks Won't (Always) Fix An Agent Leaderboard (arXiv 2026) [[paper]](https://arxiv.org/abs/2610.00651)
 - Are We Measuring Scientific Intelligence? Rethinking the Evaluation of AI Scientists (NeurIPS Agentic AI for Biological Discovery Workshop 2026) [[paper]](https://arxiv.org/abs/2610.04915)
 - Chasing the Public Score: User Pressure and Evaluation Exploitation in Coding Agent Workflows (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.20200)
-- Do Agent Benchmarks Measure Capability? Protocol Validity in the Age of Agentic AI (arXiv 2026) [[paper]](https://arxiv.org/abs/2607.22368)
 - Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation (ICLR 2026) [[paper]](https://arxiv.org/abs/2510.11977)
 - Life After Benchmark Saturation: A Case Study of CORE-Bench (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.26158)
 - Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks (arXiv 2026) [[paper]](https://arxiv.org/abs/2608.02442)
-- Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks (COLM 2026) [[paper]](https://arxiv.org/abs/2604.24955)
 - Establishing Best Practices for Building Rigorous Agentic Benchmarks (NeurIPS Datasets and Benchmarks 2025) [[paper]](https://arxiv.org/abs/2507.02825)
 
 ## Foundations and Related Areas
@@ -629,31 +561,17 @@ The sections below organise related work around three questions:
 - A survey of the state of the practice for research software in the United States (PeerJ CS 2022) [[paper]](https://doi.org/10.7717/peerj-cs.963)
 - Software engineering practices for scientific software development: A systematic mapping study (JSS 2021) [[paper]](https://doi.org/10.1016/j.jss.2020.110848)
 - Naming the Pain in Developing Scientific Software (IEEE Software 2020) [[paper]](https://doi.org/10.1109/MS.2019.2899838)
-- Characterizing the Roles of Contributors in Open-Source Scientific Software Projects (MSR 2019) [[paper]](https://doi.org/10.1109/MSR.2019.00069)
 - Bridging the Chasm: A Survey of Software Engineering Practice in Scientific Programming (ACM Computing Surveys 2017) [[paper]](https://doi.org/10.1145/3084225)
 - Claims about the use of software engineering practices in science: A systematic literature review (IST 2015) [[paper]](https://doi.org/10.1016/j.infsof.2015.07.011)
-- Software Use in Astronomy: an Informal Survey (arXiv 2015) [[paper]](https://arxiv.org/abs/1507.03989)
 - How do scientists develop and use scientific software? (SECSE@ICSE 2009) [[paper]](https://doi.org/10.1109/SECSE.2009.5069155)
 - A Software Chasm: Software Engineering and Scientific Computing (IEEE Software 2007) [[paper]](https://doi.org/10.1109/MS.2007.155)
 - When Software Engineers Met Research Scientists: A Case Study (EMSE 2005) [[paper]](https://doi.org/10.1007/s10664-005-3865-y)
 
-**Design and quality**
-
-- Multi-Artifact Analysis of Self-Admitted Technical Debt in Scientific Software (PASC 2026) [[paper]](https://doi.org/10.1145/3815572.3815759)
-- Peer code review in research software development: The research software engineer perspective (EMSE 2026) [[paper]](https://doi.org/10.1007/s10664-025-10785-0)
-- When Tools Overlook Domain Knowledge: An Empirical Study of Refactoring in Scientific Software (TOSEM 2026) [[paper]](https://doi.org/10.1145/3821432)
-- Developers perception of peer code review in research software development (EMSE 2022) [[paper]](https://doi.org/10.1007/s10664-021-10053-x)
-
-**Sustainability, citation and FAIR**
+**Good practice and FAIR**
 
 - CODE beyond FAIR: a roadmap for reusable research software (Scientific Data 2026) [[paper]](https://doi.org/10.1038/s41597-026-06705-6)
-- Code Contribution and Credit in Science (arXiv 2025) [[paper]](https://arxiv.org/abs/2510.16242)
-- Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think! Lessons from Curating a Catalog of Maintained Scientific Software (FSE 2025) [[paper]](https://doi.org/10.1145/3729369)
-- Foundational Competencies and Responsibilities of a Research Software Engineer (F1000Research 2024) [[paper]](https://doi.org/10.12688/f1000research.157778.1)
 - Introducing the FAIR Principles for research software (Scientific Data 2022) [[paper]](https://doi.org/10.1038/s41597-022-01710-x)
 - Good enough practices in scientific computing (PLOS Computational Biology 2017) [[paper]](https://doi.org/10.1371/journal.pcbi.1005510)
-- Software citation principles (PeerJ CS 2016) [[paper]](https://doi.org/10.7717/peerj-cs.86)
-- Software in the scientific literature: Problems with seeing, finding, and using software mentioned in the biology literature (JASIST 2016) [[paper]](https://doi.org/10.1002/asi.23538)
 - Best Practices for Scientific Computing (PLOS Biology 2014) [[paper]](https://doi.org/10.1371/journal.pbio.1001745)
 
 ### AI for research software engineering
@@ -726,14 +644,6 @@ The sections below organise related work around three questions:
 ### Scientific software
 
 A catalogue of widely used scientific software packages, grouped by domain, is kept in [SOFTWARE.md](SOFTWARE.md).
-
-### Scientific software usage and influence
-
-- Exclusive: the most-cited papers of the twenty-first century (Nature 2025) [[paper]](https://doi.org/10.1038/d41586-025-01125-9)
-- A large dataset of software mentions in the biomedical literature (arXiv 2022) [[paper]](https://arxiv.org/abs/2209.00693)
-- The role of software in science: a knowledge graph-based analysis of software mentions in PubMed Central (PeerJ CS 2022) [[paper]](https://doi.org/10.7717/peerj-cs.835)
-- SoMeSci - A 5 Star Open Data Gold Standard Knowledge Graph of Software Mentions in Scientific Articles (CIKM 2021) [[paper]](https://doi.org/10.1145/3459637.3482017)
-- The top 100 papers (Nature 2014) [[paper]](https://doi.org/10.1038/514550a)
 
 ### Venues and communities
 
