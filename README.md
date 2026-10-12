@@ -475,7 +475,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 
 ## Foundations
 
-Work that was not built for AI-driven science but that the SE4AISci agenda builds on: software engineering for scientific software (SE4Science), research software engineering, scientific computing, metascience and, for Execution, general agent security. The first subsection maps the primary reference for each technique to the stage of the Scientific Assurance Chain where it applies; the rest covers the SE4Science lineage more broadly.
+Work that SE4AISci builds on but that was not built for it: software engineering for scientific software (SE4Science), research software engineering, scientific computing and metascience. The first subsection gives, for each stage of the chain, the primary references for the techniques named in the stage table above. The remaining subsections cover the SE4Science lineage more broadly.
 
 ### Foundations by chain stage
 
