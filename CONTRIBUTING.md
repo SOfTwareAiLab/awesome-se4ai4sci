@@ -9,7 +9,7 @@ An entry qualifies if it does at least one of the following:
 - builds, evaluates or critiques an AI system that does scientific work (hypothesis generation, experiment design, code, execution, analysis, writing);
 - documents a failure, risk or research-integrity threat of such systems;
 - supplies a software engineering technique for any stage of the scientific assurance chain (intent, workflow, implementation, execution, evidence, claim);
-- forms part of the SE4Science or research software engineering foundations that the agenda builds on;
+- forms part of SE4Science or research software engineering;
 - is a benchmark or evaluation study of AI research agents.
 
 The list is deliberately strict about what counts as in-field. Work with no scientific setting is included only when it is a primary reference for a technique the vision paper names for a chain stage or its research agenda, or when it applies LLMs or agents to such a technique (for example property-based testing, metamorphic testing, sandboxing, capability restriction or provenance). A few canonical surveys of neighbouring fields are kept under Related Areas.
@@ -27,7 +27,7 @@ Each of the six stages of the Scientific Assurance Chain separates its entries i
 
 Pick the stage whose assurance problem the work addresses, then the group. A failure study that spans several stages goes under Cross-cutting failures.
 
-Techniques, tools, standards and evidence that were not built for AI-driven science go under Foundations. The subsection Foundations by chain stage keeps the primary reference for each technique the vision paper names for a stage (one or two entries per technique), and the remaining subsections cover the SE4Science lineage. General LLM4SE or AI-safety work with no scientific setting is not a foundation unless it is the primary reference for such a technique.
+Techniques, tools, standards and evidence that were not built for AI-driven science go under Foundations and Related Areas. The subsection SE4Science by chain stage keeps the primary reference for each technique the vision paper names for a stage (one or two entries per technique), and the remaining subsections cover the SE4Science lineage. General LLM4SE or AI-safety work with no scientific setting is not included there unless it is the primary reference for such a technique.
 
 ## Verification standard
 

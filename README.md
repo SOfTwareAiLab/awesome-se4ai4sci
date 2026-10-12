@@ -27,7 +27,7 @@ The sections below organise related work around two questions:
 - **Where it breaks**: documented failures of AI systems doing scientific work at that stage.
 - **SE4AISci work**: techniques, tools, protocols and benchmarks built to assure AI-driven scientific workflows.
 
-Techniques and evidence that predate AI-driven science, from SE4Science, scientific computing and metascience, are collected separately under [Foundations](#foundations), organised by the same six stages.
+Techniques and evidence that predate AI-driven science, from SE4Science, scientific computing and metascience, are collected separately under [Foundations and Related Areas](#foundations-and-related-areas), organised by the same six stages.
 
 | Stage | What is assured | SE techniques |
 |---|---|---|
@@ -64,12 +64,11 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
   - [Data-driven discovery and analysis](#data-driven-discovery-and-analysis)
   - [Laboratory, protocol and ideation](#laboratory-protocol-and-ideation)
   - [Evaluation methodology](#evaluation-methodology)
-- [Foundations](#foundations)
-  - [Foundations by chain stage](#foundations-by-chain-stage)
+- [Foundations and Related Areas](#foundations-and-related-areas)
+  - [SE4Science by chain stage](#se4science-by-chain-stage)
   - [SE4Science and research software engineering](#se4science-and-research-software-engineering)
   - [Software errors that damaged science](#software-errors-that-damaged-science)
   - [Reproducibility, provenance and scientific workflows](#reproducibility-provenance-and-scientific-workflows)
-- [Related Areas](#related-areas)
   - [AI for research software engineering](#ai-for-research-software-engineering)
   - [SE for ML-based systems and LLM4SE](#se-for-ml-based-systems-and-llm4se)
   - [Scientific software](#scientific-software)
@@ -473,11 +472,11 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks (arXiv 2026) [[paper]](https://arxiv.org/abs/2608.02442)
 - Establishing Best Practices for Building Rigorous Agentic Benchmarks (NeurIPS Datasets and Benchmarks 2025) [[paper]](https://arxiv.org/abs/2507.02825)
 
-## Foundations
+## Foundations and Related Areas
 
-Work that SE4AISci builds on but that was not built for it: software engineering for scientific software (SE4Science), research software engineering, scientific computing and metascience. The first subsection gives, for each stage of the chain, the primary references for the techniques named in the stage table above. The remaining subsections cover the SE4Science lineage more broadly.
+SE4Science has long studied how to engineer software used for science, together with research software engineering, scientific computing and metascience. Its question is whether software correctly implements the science that people have decided on. AI-driven science introduces a different problem: software can now help select methods, modify studies and experiments, interpret results and formulate scientific claims. The entries here predate that shift. The first subsection lists, for each stage of the chain, the SE4Science references for the techniques named in the stage table above; the next three cover the field more broadly, and the rest point to related areas.
 
-### Foundations by chain stage
+### SE4Science by chain stage
 
 **Intent**
 
@@ -590,8 +589,6 @@ Work that SE4AISci builds on but that was not built for it: software engineering
 - The nf-core framework for community-curated bioinformatics pipelines (Nature Biotechnology 2020) [[paper]](https://doi.org/10.1038/s41587-020-0439-x) [[code]](https://github.com/nf-core/tools)
 - Nextflow enables reproducible computational workflows (Nature Biotechnology 2017) [[paper]](https://doi.org/10.1038/nbt.3820) [[code]](https://github.com/nextflow-io/nextflow)
 - Pegasus, a workflow management system for science automation (Future Generation Computer Systems 2015) [[paper]](https://doi.org/10.1016/j.future.2014.10.008) [[code]](https://github.com/pegasus-isi/pegasus)
-
-## Related Areas
 
 ### AI for research software engineering
 
