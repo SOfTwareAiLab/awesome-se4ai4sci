@@ -12,19 +12,22 @@ An entry qualifies if it does at least one of the following:
 - forms part of the SE4Science or research software engineering foundations that the agenda builds on;
 - is a benchmark or evaluation study of AI research agents.
 
-The list is deliberately strict about what counts as in-field. Work with no scientific setting is included only when it is a primary reference for a technique the vision paper names for a chain stage or its research agenda, or when it applies LLMs or agents to such a technique (for example property-based testing, metamorphic testing, sandboxing, capability restriction or provenance). A few canonical surveys of neighbouring fields are kept under Foundations and Related Areas.
+The list is deliberately strict about what counts as in-field. Work with no scientific setting is included only when it is a primary reference for a technique the vision paper names for a chain stage or its research agenda, or when it applies LLMs or agents to such a technique (for example property-based testing, metamorphic testing, sandboxing, capability restriction or provenance). A few canonical surveys of neighbouring fields are kept under Related Areas.
 
 Not included: general LLM, agent or AI-safety papers that only document model behaviour with no scientific setting, general code-generation benchmarks, misuse and biosecurity evaluations, science-knowledge question-answering benchmarks that do not exercise a research workflow, mathematics-only systems (kept only as context), scientific software packages without a verified agent interface (these belong in [SOFTWARE.md](SOFTWARE.md), not in README), and items without a resolvable identifier or official page.
 
 ## Where a chain entry goes
 
-Each of the six stages of the Scientific Assurance Chain separates its entries into three groups:
+The list separates two eras. SE4AISci work is about scientific processes in which an AI system takes part in a scientific decision; SE4Science work is about software that implements decisions made by people. The test is whether the problem the paper studies would still exist if the AI system were replaced by a careful human researcher. If it would, the paper is a foundation, not SE4AISci work.
+
+Each of the six stages of the Scientific Assurance Chain separates its entries into two groups:
 
 - **Where it breaks**: documented failures of AI systems doing scientific work at that stage (incidents, audits, case studies, and evaluations whose headline is the failure).
-- **Existing foundations**: techniques, tools, standards and evidence from software engineering, scientific computing and metascience that were not built for AI-driven science but could be adapted.
 - **SE4AISci work**: techniques, tools, protocols and assurance-targeted benchmarks built for AI-driven scientific workflows.
 
 Pick the stage whose assurance problem the work addresses, then the group. A failure study that spans several stages goes under Cross-cutting failures.
+
+Techniques, tools, standards and evidence that were not built for AI-driven science go under Foundations. The subsection Foundations by chain stage keeps the primary reference for each technique the vision paper names for a stage (one or two entries per technique), and the remaining subsections cover the SE4Science lineage. General LLM4SE or AI-safety work with no scientific setting is not a foundation unless it is the primary reference for such a technique.
 
 ## Verification standard
 
@@ -64,13 +67,13 @@ Rules:
 - `[[paper]]` is required for papers. `[[code]]`, `[[website]]` or `[[data]]` are optional and only when the link exists and matches.
 - No em-dashes, no emojis.
 - Entries within a list are ordered by year descending, then by title ignoring case. Venues and lists are alphabetical.
-- Each work appears once, in the section where its main contribution lies. The only exception is the six grounding cases of the vision paper, which appear both in their assurance-chain stage and in their home section. Each stage heading names its grounding case.
+- Each work appears once, in the section where its main contribution lies. The only exception is the grounding cases of the vision paper, which appear both in their assurance-chain stage and in their home section.
 
 ## Pull requests
 
 - One topic per pull request. Several entries for the same section are fine.
 - Update the "updated" badge at the top of README.md.
-- Keep the section titles and the three group labels under each stage unchanged. They follow the wording of the SE4AISci vision paper.
+- Keep the section titles and the two group labels under each stage unchanged. They follow the wording of the SE4AISci vision paper.
 - Run a link check locally before opening the pull request, for example with `lychee README.md`, or state in the description that each link was opened by hand.
 
 ## Suggesting without a pull request

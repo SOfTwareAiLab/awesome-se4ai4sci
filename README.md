@@ -22,11 +22,12 @@ Correct code is necessary, but trustworthy scientific claims require much more.
 
 The chain captures the path from a scientific question to the claim ultimately produced from it. Each stage creates a different assurance problem, and failures can propagate even when later software behaves correctly.
 
-The sections below organise related work around three questions:
+The sections below organise related work around two questions:
 
 - **Where it breaks**: documented failures of AI systems doing scientific work at that stage.
-- **Existing foundations**: techniques, tools, standards and evidence from SE, scientific computing and metascience that could be adapted.
 - **SE4AISci work**: techniques, tools, protocols and benchmarks built to assure AI-driven scientific workflows.
+
+Techniques and evidence that predate AI-driven science, from SE4Science, scientific computing and metascience, are collected separately under [Foundations](#foundations), organised by the same six stages.
 
 | Stage | What is assured | SE techniques |
 |---|---|---|
@@ -63,11 +64,13 @@ The sections below organise related work around three questions:
   - [Data-driven discovery and analysis](#data-driven-discovery-and-analysis)
   - [Laboratory, protocol and ideation](#laboratory-protocol-and-ideation)
   - [Evaluation methodology](#evaluation-methodology)
-- [Foundations and Related Areas](#foundations-and-related-areas)
+- [Foundations](#foundations)
+  - [Foundations by chain stage](#foundations-by-chain-stage)
   - [SE4Science and research software engineering](#se4science-and-research-software-engineering)
-  - [AI for research software engineering](#ai-for-research-software-engineering)
   - [Software errors that damaged science](#software-errors-that-damaged-science)
   - [Reproducibility, provenance and scientific workflows](#reproducibility-provenance-and-scientific-workflows)
+- [Related Areas](#related-areas)
+  - [AI for research software engineering](#ai-for-research-software-engineering)
   - [SE for ML-based systems and LLM4SE](#se-for-ml-based-systems-and-llm4se)
   - [Scientific software](#scientific-software)
   - [Venues and communities](#venues-and-communities)
@@ -88,29 +91,12 @@ The sections below organise related work around three questions:
 
 ### Intent
 
-*Answering the wrong scientific question. Grounding case: AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution (Cell 2025).*
-
 **Where it breaks**
 
 - Many AI analysts, one dataset: Navigating the agentic data science multiverse (PNAS 2026) [[paper]](https://doi.org/10.1073/pnas.2606495123)
 - Nonstandard Errors in AI Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2603.16744)
 - The Agentic Garden of Forking Paths (arXiv 2026) [[paper]](https://arxiv.org/abs/2607.01507)
 - AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution (Cell 2025) [[paper]](https://doi.org/10.1016/j.cell.2025.08.018)
-
-**Existing foundations**
-
-- RDoFlow: Automatically assessing under-specified statistical analyses in HCI (IUI 2026) [[paper]](https://doi.org/10.1145/3742413.3789160)
-- Requirements Engineering for Research Software: A Vision (RE 2024) [[paper]](https://doi.org/10.1109/RE59067.2024.00050)
-- rTisane: Externalizing conceptual models for data analysis prompts reconsideration of domain assumptions and facilitates statistical modeling (CHI 2024) [[paper]](https://doi.org/10.1145/3613904.3642267) [[code]](https://github.com/tea-lang-org/rTisane)
-- Hypothesis Formalization: Empirical Findings, Software Limitations, and Design Implications (ACM TOCHI 2022) [[paper]](https://doi.org/10.1145/3476980)
-- Tisane: Authoring Statistical Models via Formal Reasoning from Conceptual and Data Relationships (CHI 2022) [[paper]](https://doi.org/10.1145/3491102.3501888) [[code]](https://github.com/tea-lang-org/tisane)
-- Specification curve analysis (Nature Human Behaviour 2020) [[paper]](https://doi.org/10.1038/s41562-020-0912-z)
-- Variability in the analysis of a single neuroimaging dataset by many teams (Nature 2020) [[paper]](https://doi.org/10.1038/s41586-020-2314-9)
-- Tea: A High-level Language and Runtime System for Automating Statistical Analysis (UIST 2019) [[paper]](https://doi.org/10.1145/3332165.3347940) [[code]](https://github.com/tea-lang-org/tea-lang)
-- Many Analysts, One Data Set: Making Transparent How Variations in Analytic Choices Affect Results (Advances in Methods and Practices in Psychological Science 2018) [[paper]](https://doi.org/10.1177/2515245917747646)
-- The preregistration revolution (PNAS 2018) [[paper]](https://doi.org/10.1073/pnas.1708274114)
-- Guidelines for the Content of Statistical Analysis Plans in Clinical Trials (JAMA 2017) [[paper]](https://doi.org/10.1001/jama.2017.18556)
-- Systematic Development of Requirements Documentation for General Purpose Scientific Computing Software (RE 2006) [[paper]](https://doi.org/10.1109/re.2006.61)
 
 **SE4AISci work**
 
@@ -121,8 +107,6 @@ The sections below organise related work around three questions:
 
 ### Workflow
 
-*The right number from the wrong procedure. Grounding case: Can Coding Agents Reproduce Findings in Computational Materials Science? (COLM 2026).*
-
 **Where it breaks**
 
 - Autoresearch with Coding Agents: Generalizers and Metric-Maximizers on Quran Recitation Data (arXiv 2026) [[paper]](https://arxiv.org/abs/2607.18064)
@@ -131,19 +115,11 @@ The sections below organise related work around three questions:
 - Likelihood Hacking in Probabilistic Program Synthesis (UAI 2026) [[paper]](https://arxiv.org/abs/2603.24126)
 - Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation (arXiv 2025) [[paper]](https://arxiv.org/abs/2509.08825)
 
-**Existing foundations**
-
-- Towards Generating Contracts for Scientific Data Analysis Workflows (SC24-W 2024) [[paper]](https://doi.org/10.1109/SCW63240.2024.00256)
-- Boba: Authoring and Visualizing Multiverse Analyses (IEEE TVCG 2021) [[paper]](https://doi.org/10.1109/TVCG.2020.3028985) [[code]](https://github.com/uwdata/boba)
-- Designing and deploying online field experiments (WWW 2014) [[paper]](https://doi.org/10.1145/2566486.2567967) [[code]](https://github.com/facebookarchive/planout)
-
 **SE4AISci work**
 
 - Sanity Checks for Agentic Data Science (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.11003)
 
 ### Implementation
-
-*Reconstructing the wrong experiment. Grounding case: EXP-Bench: Can AI Conduct AI Research Experiments? (ICLR 2026).*
 
 **Where it breaks**
 
@@ -151,24 +127,6 @@ The sections below organise related work around three questions:
 - EXP-Bench: Can AI Conduct AI Research Experiments? (ICLR 2026) [[paper]](https://arxiv.org/abs/2505.24785) [[code]](https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench)
 - Generated, Parallel, Scalable? A Study of Agentic AI-Generated Julia Code on Supercomputers (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.16534)
 - Can Large Language Models Write Parallel Code? (HPDC 2024) [[paper]](https://doi.org/10.1145/3625549.3658689) [[code]](https://github.com/parallelcodefoundry/ParEval)
-
-**Existing foundations**
-
-- Enhancing Understandability and Transparency of Research Software: Tracing Research to Code (SERS@ICSE 2026) [[paper]](https://doi.org/10.1145/3786172.3788363)
-- PBT-Bench: Benchmarking AI Agents on Property-Based Testing (NeurIPS 2026) [[paper]](https://arxiv.org/abs/2605.15229)
-- Agentic Property-Based Testing: Finding Bugs Across the Python Ecosystem (NeurIPS Workshop 2025) [[paper]](https://arxiv.org/abs/2510.09907) [[code]](https://github.com/mmaaz-git/agentic-pbt)
-- Can Large Language Models Discover Metamorphic Relations? A Large-Scale Empirical Study (SANER 2025) [[paper]](https://doi.org/10.1109/SANER64311.2025.00011)
-- Do LLMs Generate Useful Test Oracles? An Empirical Study with an Unbiased Dataset (ASE 2025) [[paper]](https://doi.org/10.1109/ASE63991.2025.00031)
-- Metamorphic Testing on Scientific Programs for Solving Second-Order Elliptic Differential Equations (STVR 2025) [[paper]](https://doi.org/10.1002/stvr.1912)
-- Using Assurance Cases to Guide Verification and Validation of Research Software (arXiv 2024) [[paper]](https://arxiv.org/abs/2411.03291)
-- Generating Software for Well-Understood Domains (arXiv 2023) [[paper]](https://arxiv.org/abs/2302.00740) [[code]](https://github.com/JacquesCarette/Drasil)
-- Numerical uncertainty in analytical pipelines lead to impactful variability in brain networks (PLOS ONE 2021) [[paper]](https://doi.org/10.1371/journal.pone.0250755)
-- Metamorphic Testing: A Simple Yet Effective Approach for Testing Scientific Software (CiSE 2019) [[paper]](https://doi.org/10.1109/MCSE.2018.2875368)
-- A new ensemble-based consistency test for the Community Earth System Model (pyCECT v1.0) (GMD 2015) [[paper]](https://doi.org/10.5194/gmd-8-2829-2015) [[code]](https://github.com/NCAR/PyCECT)
-- The Oracle Problem in Software Testing: A Survey (TSE 2015) [[paper]](https://doi.org/10.1109/TSE.2014.2372785)
-- Verification and validation of bioinformatics software without a gold standard: a case study of BWA and Bowtie (BMC Bioinformatics 2014) [[paper]](https://doi.org/10.1186/1471-2105-15-S16-S15)
-- Code Verification by the Method of Manufactured Solutions (Journal of Fluids Engineering 2002) [[paper]](https://doi.org/10.1115/1.1436090)
-- On Testing Non-Testable Programs (The Computer Journal 1982) [[paper]](https://doi.org/10.1093/comjnl/25.4.465)
 
 **SE4AISci work**
 
@@ -179,23 +137,10 @@ The sections below organise related work around three questions:
 
 ### Execution
 
-*Escaping the experimental boundary. Grounding case: The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (arXiv 2024).*
-
 **Where it breaks**
 
 - Benchmarking large language models on safety risks in scientific laboratories (Nature Machine Intelligence 2026) [[paper]](https://doi.org/10.1038/s42256-025-01152-1)
 - The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (arXiv 2024) [[paper]](https://arxiv.org/abs/2408.06292) [[code]](https://github.com/SakanaAI/AI-Scientist)
-
-**Existing foundations**
-
-- Automated Modernization of Machine Learning Engineering Notebooks for Reproducibility (Proceedings of the ACM on Software Engineering 2026) [[paper]](https://doi.org/10.1145/3832166)
-- Containing the Reproducibility Gap: Automated Repository-Level Containerization for Scholarly Jupyter Notebooks (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.01072)
-- Progent: Securing AI Agents with Privilege Control (arXiv 2026) [[paper]](https://arxiv.org/abs/2504.11703)
-- Defeating Prompt Injections by Design (arXiv 2025) [[paper]](https://arxiv.org/abs/2503.18813) [[code]](https://github.com/google-research/camel-prompt-injection)
-- SandboxEval: Towards Securing Test Environment for Untrusted Code (arXiv 2025) [[paper]](https://arxiv.org/abs/2504.00018)
-- Assessing and restoring reproducibility of Jupyter notebooks (ASE 2020) [[paper]](https://doi.org/10.1145/3324884.3416585)
-- Singularity: Scientific containers for mobility of compute (PLOS ONE 2017) [[paper]](https://doi.org/10.1371/journal.pone.0177459)
-- An introduction to Docker for reproducible research (ACM SIGOPS Operating Systems Review 2015) [[paper]](https://doi.org/10.1145/2723872.2723882)
 
 **SE4AISci work**
 
@@ -204,8 +149,6 @@ The sections below organise related work around three questions:
 - SafeScientist: Enhancing AI Scientist Safety for Risk-Aware Scientific Discovery (EMNLP 2025) [[paper]](https://doi.org/10.18653/v1/2025.emnlp-main.116)
 
 ### Evidence
-
-*Extracting the wrong data. Grounding case: Assessing Multimodal AI for Visual Information Extraction of Pharmacology (AMIA Joint Summits on Translational Science 2026).*
 
 **Where it breaks**
 
@@ -219,17 +162,6 @@ The sections below organise related work around three questions:
 - Artificial Intelligence-Assisted Data Extraction With a Large Language Model: A Study Within Reviews (Annals of Internal Medicine 2025) [[paper]](https://doi.org/10.7326/ANNALS-25-00739)
 - CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs (NeurIPS 2024) [[paper]](https://arxiv.org/abs/2406.18521) [[code]](https://github.com/princeton-nlp/CharXiv)
 
-**Existing foundations**
-
-- From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.04990)
-- OpenTelemetry Semantic Conventions for Generative AI (OpenTelemetry 2026) [[paper]](https://opentelemetry.io/docs/specs/semconv/gen-ai/) [[code]](https://github.com/open-telemetry/semantic-conventions-genai)
-- Detecting hallucinations in large language models using semantic entropy (Nature 2024) [[paper]](https://doi.org/10.1038/s41586-024-07421-0) [[code]](https://github.com/jlko/semantic_uncertainty)
-- Recording provenance of workflow runs with RO-Crate (PLOS ONE 2024) [[paper]](https://doi.org/10.1371/journal.pone.0309210)
-- Packaging research artefacts with RO-Crate (Data Science 2022) [[paper]](https://doi.org/10.3233/DS-210053) [[code]](https://github.com/ResearchObject/ro-crate)
-- ReproZip: Computational Reproducibility With Ease (SIGMOD 2016) [[paper]](https://doi.org/10.1145/2882903.2899401) [[code]](https://github.com/VIDA-NYU/reprozip)
-- noWorkflow: Capturing and Analyzing Provenance of Scripts (IPAW 2015) [[paper]](https://doi.org/10.1007/978-3-319-16462-5_6) [[code]](https://github.com/gems-uff/noworkflow)
-- PROV-DM: The PROV Data Model (W3C Recommendation 2013) [[paper]](https://www.w3.org/TR/prov-dm/)
-
 **SE4AISci work**
 
 - Verifying LLM-extracted text with token alignment (bioRxiv 2026) [[paper]](https://doi.org/10.64898/2026.02.06.704502)
@@ -239,8 +171,6 @@ The sections below organise related work around three questions:
 - Extracting accurate materials data from research papers with conversational language models and prompt engineering (Nature Communications 2024) [[paper]](https://doi.org/10.1038/s41467-024-45914-8)
 
 ### Claim
-
-*When the explanation contradicts the evidence. Grounding case: Position: Correct Answer, Wrong Mechanism, When AI Scientists Defend General Claims Their Own Data Contradicts (ICML AI for Science Workshop 2026).*
 
 **Where it breaks**
 
@@ -258,14 +188,6 @@ The sections below organise related work around three questions:
 - Explosion of formulaic research articles, including inappropriate study designs and false discoveries, based on the NHANES US national health database (PLOS Biology 2025) [[paper]](https://doi.org/10.1371/journal.pbio.3003152)
 - Generalization bias in large language model summarization of scientific research (Royal Society Open Science 2025) [[paper]](https://doi.org/10.1098/rsos.241776)
 - Challenges in High-Throughput Inorganic Materials Prediction and Autonomous Synthesis (PRX Energy 2024) [[paper]](https://doi.org/10.1103/PRXEnergy.3.011002)
-
-**Existing foundations**
-
-- Implementing Statcheck During Peer Review Is Related to a Steep Decline in Statistical-Reporting Inconsistencies (Advances in Methods and Practices in Psychological Science 2024) [[paper]](https://doi.org/10.1177/25152459241258945)
-- SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables (EMNLP 2023) [[paper]](https://doi.org/10.18653/v1/2023.emnlp-main.483) [[code]](https://github.com/XinyuanLu00/SciTab)
-- Fact or Fiction: Verifying Scientific Claims (EMNLP 2020) [[paper]](https://doi.org/10.18653/v1/2020.emnlp-main.609) [[code]](https://github.com/allenai/scifact)
-- The GRIM Test: A Simple Technique Detects Numerous Anomalies in the Reporting of Results in Psychology (Social Psychological and Personality Science 2017) [[paper]](https://doi.org/10.1177/1948550616673876)
-- The prevalence of statistical reporting errors in psychology (1985-2013) (Behavior Research Methods 2016) [[paper]](https://doi.org/10.3758/s13428-015-0664-2) [[code]](https://github.com/MicheleNuijten/statcheck)
 
 **SE4AISci work**
 
@@ -551,7 +473,61 @@ The sections below organise related work around three questions:
 - Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks (arXiv 2026) [[paper]](https://arxiv.org/abs/2608.02442)
 - Establishing Best Practices for Building Rigorous Agentic Benchmarks (NeurIPS Datasets and Benchmarks 2025) [[paper]](https://arxiv.org/abs/2507.02825)
 
-## Foundations and Related Areas
+## Foundations
+
+Work that was not built for AI-driven science but that the SE4AISci agenda builds on: software engineering for scientific software (SE4Science), research software engineering, scientific computing, metascience and, for Execution, general agent security. The first subsection maps the primary reference for each technique to the stage of the Scientific Assurance Chain where it applies; the rest covers the SE4Science lineage more broadly.
+
+### Foundations by chain stage
+
+**Intent**
+
+- Requirements Engineering for Research Software: A Vision (RE 2024) [[paper]](https://doi.org/10.1109/RE59067.2024.00050)
+- Hypothesis Formalization: Empirical Findings, Software Limitations, and Design Implications (ACM TOCHI 2022) [[paper]](https://doi.org/10.1145/3476980)
+- Tisane: Authoring Statistical Models via Formal Reasoning from Conceptual and Data Relationships (CHI 2022) [[paper]](https://doi.org/10.1145/3491102.3501888) [[code]](https://github.com/tea-lang-org/tisane)
+- Variability in the analysis of a single neuroimaging dataset by many teams (Nature 2020) [[paper]](https://doi.org/10.1038/s41586-020-2314-9)
+- Many Analysts, One Data Set: Making Transparent How Variations in Analytic Choices Affect Results (Advances in Methods and Practices in Psychological Science 2018) [[paper]](https://doi.org/10.1177/2515245917747646)
+- The preregistration revolution (PNAS 2018) [[paper]](https://doi.org/10.1073/pnas.1708274114)
+- Systematic Development of Requirements Documentation for General Purpose Scientific Computing Software (RE 2006) [[paper]](https://doi.org/10.1109/re.2006.61)
+
+**Workflow**
+
+- Towards Generating Contracts for Scientific Data Analysis Workflows (SC24-W 2024) [[paper]](https://doi.org/10.1109/SCW63240.2024.00256)
+- Boba: Authoring and Visualizing Multiverse Analyses (IEEE TVCG 2021) [[paper]](https://doi.org/10.1109/TVCG.2020.3028985) [[code]](https://github.com/uwdata/boba)
+- Designing and deploying online field experiments (WWW 2014) [[paper]](https://doi.org/10.1145/2566486.2567967) [[code]](https://github.com/facebookarchive/planout)
+
+**Implementation**
+
+- Enhancing Understandability and Transparency of Research Software: Tracing Research to Code (SERS@ICSE 2026) [[paper]](https://doi.org/10.1145/3786172.3788363)
+- Using Assurance Cases to Guide Verification and Validation of Research Software (arXiv 2024) [[paper]](https://arxiv.org/abs/2411.03291)
+- Generating Software for Well-Understood Domains (arXiv 2023) [[paper]](https://arxiv.org/abs/2302.00740) [[code]](https://github.com/JacquesCarette/Drasil)
+- Numerical uncertainty in analytical pipelines lead to impactful variability in brain networks (PLOS ONE 2021) [[paper]](https://doi.org/10.1371/journal.pone.0250755)
+- Metamorphic Testing: A Simple Yet Effective Approach for Testing Scientific Software (CiSE 2019) [[paper]](https://doi.org/10.1109/MCSE.2018.2875368)
+- A new ensemble-based consistency test for the Community Earth System Model (pyCECT v1.0) (GMD 2015) [[paper]](https://doi.org/10.5194/gmd-8-2829-2015) [[code]](https://github.com/NCAR/PyCECT)
+- The Oracle Problem in Software Testing: A Survey (TSE 2015) [[paper]](https://doi.org/10.1109/TSE.2014.2372785)
+- Verification and validation of bioinformatics software without a gold standard: a case study of BWA and Bowtie (BMC Bioinformatics 2014) [[paper]](https://doi.org/10.1186/1471-2105-15-S16-S15)
+- Code Verification by the Method of Manufactured Solutions (Journal of Fluids Engineering 2002) [[paper]](https://doi.org/10.1115/1.1436090)
+
+**Execution**
+
+- Containing the Reproducibility Gap: Automated Repository-Level Containerization for Scholarly Jupyter Notebooks (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.01072)
+- Progent: Securing AI Agents with Privilege Control (arXiv 2026) [[paper]](https://arxiv.org/abs/2504.11703)
+- Defeating Prompt Injections by Design (arXiv 2025) [[paper]](https://arxiv.org/abs/2503.18813) [[code]](https://github.com/google-research/camel-prompt-injection)
+- Assessing and restoring reproducibility of Jupyter notebooks (ASE 2020) [[paper]](https://doi.org/10.1145/3324884.3416585)
+- Singularity: Scientific containers for mobility of compute (PLOS ONE 2017) [[paper]](https://doi.org/10.1371/journal.pone.0177459)
+
+**Evidence**
+
+- From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.04990)
+- OpenTelemetry Semantic Conventions for Generative AI (OpenTelemetry 2026) [[paper]](https://opentelemetry.io/docs/specs/semconv/gen-ai/) [[code]](https://github.com/open-telemetry/semantic-conventions-genai)
+- Recording provenance of workflow runs with RO-Crate (PLOS ONE 2024) [[paper]](https://doi.org/10.1371/journal.pone.0309210)
+- noWorkflow: Capturing and Analyzing Provenance of Scripts (IPAW 2015) [[paper]](https://doi.org/10.1007/978-3-319-16462-5_6) [[code]](https://github.com/gems-uff/noworkflow)
+- PROV-DM: The PROV Data Model (W3C Recommendation 2013) [[paper]](https://www.w3.org/TR/prov-dm/)
+
+**Claim**
+
+- Fact or Fiction: Verifying Scientific Claims (EMNLP 2020) [[paper]](https://doi.org/10.18653/v1/2020.emnlp-main.609) [[code]](https://github.com/allenai/scifact)
+- The GRIM Test: A Simple Technique Detects Numerous Anomalies in the Reporting of Results in Psychology (Social Psychological and Personality Science 2017) [[paper]](https://doi.org/10.1177/1948550616673876)
+- The prevalence of statistical reporting errors in psychology (1985-2013) (Behavior Research Methods 2016) [[paper]](https://doi.org/10.3758/s13428-015-0664-2) [[code]](https://github.com/MicheleNuijten/statcheck)
 
 ### SE4Science and research software engineering
 
@@ -562,10 +538,8 @@ The sections below organise related work around three questions:
 - Software engineering practices for scientific software development: A systematic mapping study (JSS 2021) [[paper]](https://doi.org/10.1016/j.jss.2020.110848)
 - Naming the Pain in Developing Scientific Software (IEEE Software 2020) [[paper]](https://doi.org/10.1109/MS.2019.2899838)
 - Bridging the Chasm: A Survey of Software Engineering Practice in Scientific Programming (ACM Computing Surveys 2017) [[paper]](https://doi.org/10.1145/3084225)
-- Claims about the use of software engineering practices in science: A systematic literature review (IST 2015) [[paper]](https://doi.org/10.1016/j.infsof.2015.07.011)
 - How do scientists develop and use scientific software? (SECSE@ICSE 2009) [[paper]](https://doi.org/10.1109/SECSE.2009.5069155)
 - A Software Chasm: Software Engineering and Scientific Computing (IEEE Software 2007) [[paper]](https://doi.org/10.1109/MS.2007.155)
-- When Software Engineers Met Research Scientists: A Case Study (EMSE 2005) [[paper]](https://doi.org/10.1007/s10664-005-3865-y)
 
 **Good practice and FAIR**
 
@@ -574,22 +548,10 @@ The sections below organise related work around three questions:
 - Good enough practices in scientific computing (PLOS Computational Biology 2017) [[paper]](https://doi.org/10.1371/journal.pcbi.1005510)
 - Best Practices for Scientific Computing (PLOS Biology 2014) [[paper]](https://doi.org/10.1371/journal.pbio.1001745)
 
-### AI for research software engineering
-
-- From RSE to AI4RSE: A Quadrant Model for AI-Augmented Research Software (ICSE-NIER 2026) [[paper]](https://doi.org/10.1145/3786582.3786838)
-- How Researchers Use and Verify AI Coding Assistants: Tasks and Validation Practices in Scientific Programming (arXiv 2026) [[paper]](https://arxiv.org/abs/2609.22049)
-- LLMoxie: Exploring Agentic AI for Scientific Software Development (KDD Workshop 2026) [[paper]](https://arxiv.org/abs/2607.02703)
-- Research Software Engineering in the Age of Generative AI: Building a Community Vision (Zenodo report 2026) [[paper]](https://doi.org/10.5281/zenodo.20320884)
-- A survey of generative AI adoption and perceived productivity among scientists who program (arXiv 2025) [[paper]](https://arxiv.org/abs/2512.19644)
-- Generative AI Uses and Risks for Knowledge Workers in a Science Organization (CHI 2025) [[paper]](https://doi.org/10.1145/3706598.3713827)
-- How Scientists Use Large Language Models to Program (CHI 2025) [[paper]](https://doi.org/10.1145/3706598.3713668)
-- Position Statement on Generative AI in the RSE Workplace (ADSA and US-RSE statement 2025) [[paper]](https://github.com/Academic-Data-Science-Alliance/rse-ai-position-statement/blob/main/RSE-AI-Final_Statement.md)
-
 ### Software errors that damaged science
 
 - Gene name errors: Lessons not learned (PLOS Computational Biology 2021) [[paper]](https://doi.org/10.1371/journal.pcbi.1008984)
 - Characterization of Leptazolines A-D, Polar Oxazolines from the Cyanobacterium Leptolyngbya sp., Reveals a Glitch with the "Willoughby-Hoye" Scripts for Calculating NMR Chemical Shifts (Organic Letters 2019) [[paper]](https://doi.org/10.1021/acs.orglett.9b03216)
-- Dealing With Software Collapse (CiSE 2019) [[paper]](https://doi.org/10.1109/MCSE.2019.2900945)
 - Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates (PNAS 2016) [[paper]](https://doi.org/10.1073/pnas.1602413113)
 - Gene name errors are widespread in the scientific literature (Genome Biology 2016) [[paper]](https://doi.org/10.1186/s13059-016-1044-7)
 - Rampant software errors may undermine scientific results (F1000Research 2015) [[paper]](https://doi.org/10.12688/f1000research.5930.2)
@@ -603,7 +565,6 @@ The sections below organise related work around three questions:
 
 - Investigating the reproducibility of the social and behavioural sciences (Nature 2026) [[paper]](https://doi.org/10.1038/s41586-026-10203-5)
 - Reproducibility and robustness of economics and political science research (Nature 2026) [[paper]](https://doi.org/10.1038/s41586-026-10251-x)
-- Computational reproducibility of Jupyter notebooks from biomedical publications (GigaScience 2024) [[paper]](https://doi.org/10.1093/gigascience/giad113)
 - REFORMS: Consensus-based Recommendations for Machine-learning-based Science (Science Advances 2024) [[paper]](https://doi.org/10.1126/sciadv.adk3452)
 - Leakage and the reproducibility crisis in machine-learning-based science (Patterns 2023) [[paper]](https://doi.org/10.1016/j.patter.2023.100804)
 - A large-scale study on research code quality and execution (Scientific Data 2022) [[paper]](https://doi.org/10.1038/s41597-022-01143-6)
@@ -613,7 +574,6 @@ The sections below organise related work around three questions:
 
 **Provenance and environment capture**
 
-- Computational Reproducibility of R Code Supplements on OSF (arXiv 2025) [[paper]](https://arxiv.org/abs/2505.21590)
 - Reproducibility standards for machine learning in the life sciences (Nature Methods 2021) [[paper]](https://doi.org/10.1038/s41592-021-01256-7)
 - AiiDA 1.0, a scalable computational infrastructure for automated reproducible workflows and data provenance (Scientific Data 2020) [[paper]](https://doi.org/10.1038/s41597-020-00638-4) [[code]](https://github.com/aiidateam/aiida-core)
 - Reproducibility in Scientific Computing (ACM Computing Surveys 2018) [[paper]](https://doi.org/10.1145/3186266)
@@ -630,6 +590,19 @@ The sections below organise related work around three questions:
 - The nf-core framework for community-curated bioinformatics pipelines (Nature Biotechnology 2020) [[paper]](https://doi.org/10.1038/s41587-020-0439-x) [[code]](https://github.com/nf-core/tools)
 - Nextflow enables reproducible computational workflows (Nature Biotechnology 2017) [[paper]](https://doi.org/10.1038/nbt.3820) [[code]](https://github.com/nextflow-io/nextflow)
 - Pegasus, a workflow management system for science automation (Future Generation Computer Systems 2015) [[paper]](https://doi.org/10.1016/j.future.2014.10.008) [[code]](https://github.com/pegasus-isi/pegasus)
+
+## Related Areas
+
+### AI for research software engineering
+
+- From RSE to AI4RSE: A Quadrant Model for AI-Augmented Research Software (ICSE-NIER 2026) [[paper]](https://doi.org/10.1145/3786582.3786838)
+- How Researchers Use and Verify AI Coding Assistants: Tasks and Validation Practices in Scientific Programming (arXiv 2026) [[paper]](https://arxiv.org/abs/2609.22049)
+- LLMoxie: Exploring Agentic AI for Scientific Software Development (KDD Workshop 2026) [[paper]](https://arxiv.org/abs/2607.02703)
+- Research Software Engineering in the Age of Generative AI: Building a Community Vision (Zenodo report 2026) [[paper]](https://doi.org/10.5281/zenodo.20320884)
+- A survey of generative AI adoption and perceived productivity among scientists who program (arXiv 2025) [[paper]](https://arxiv.org/abs/2512.19644)
+- Generative AI Uses and Risks for Knowledge Workers in a Science Organization (CHI 2025) [[paper]](https://doi.org/10.1145/3706598.3713827)
+- How Scientists Use Large Language Models to Program (CHI 2025) [[paper]](https://doi.org/10.1145/3706598.3713668)
+- Position Statement on Generative AI in the RSE Workplace (ADSA and US-RSE statement 2025) [[paper]](https://github.com/Academic-Data-Science-Alliance/rse-ai-position-statement/blob/main/RSE-AI-Final_Statement.md)
 
 ### SE for ML-based systems and LLM4SE
 
