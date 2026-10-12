@@ -11,7 +11,7 @@ labels: entry
 
 **Code or website** (optional)
 
-**Section** (for example Scientific Assurance Chain > Workflow > Where it breaks)
+**Section** (for example Scientific Assurance Chain > Workflow > Where it breaks; for a chain stage, name the group: Where it breaks, Existing foundations or SE4AISci work)
 
 **One-clause contribution**
 
