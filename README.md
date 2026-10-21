@@ -1,18 +1,18 @@
-# Awesome SE4AISci
+# Awesome SE4AI4Sci
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
 [![Last updated](https://img.shields.io/badge/updated-2026--10--12-blue.svg)](#contributing)
 
-A curated list of papers, systems, benchmarks and resources on **Software Engineering for AI-Driven Science (SE4AISci)**: assuring the scientific process, not only the software that implements it.
+A curated list of papers, systems, benchmarks and resources on **Software Engineering for AI-Driven Science (SE4AI4Sci)**: assuring the scientific process, not only the software that implements it.
 
-## What is SE4AISci
+## What is SE4AI4Sci
 
 ![The Scientific Assurance Chain](assets/chain.png)
 
 AI is beginning to do science, not just support it. Software can now help choose methods, run experiments, interpret evidence and formulate scientific claims.
 
-**SE4AISci** studies how software engineering can help make these scientific processes more explicit, checkable and traceable. Its organising framework is the **Scientific Assurance Chain**:
+**SE4AI4Sci** studies how software engineering can help make these scientific processes more explicit, checkable and traceable. Its organising framework is the **Scientific Assurance Chain**:
 
 <p align="center"><em>Intent &rarr; Workflow &rarr; Implementation &rarr; Execution &rarr; Evidence &rarr; Claim</em></p>
 
@@ -25,7 +25,7 @@ The chain captures the path from a scientific question to the claim ultimately p
 The sections below organise related work around two questions:
 
 - **Where it breaks**: documented failures of AI systems doing scientific work at that stage.
-- **SE4AISci work**: techniques, tools, protocols and benchmarks built to assure AI-driven scientific workflows.
+- **SE4AI4Sci work**: techniques, tools, protocols and benchmarks built to assure AI-driven scientific workflows.
 
 Techniques and evidence that predate AI-driven science, from SE4Science, scientific computing and metascience, are collected separately under [Foundations and Related Areas](#foundations-and-related-areas), organised by the same six stages.
 
@@ -74,6 +74,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
   - [Scientific software](#scientific-software)
   - [Venues and communities](#venues-and-communities)
   - [Related awesome lists](#related-awesome-lists)
+- [Scientific Software Catalogue](SOFTWARE.md)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -97,7 +98,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - The Agentic Garden of Forking Paths (arXiv 2026) [[paper]](https://arxiv.org/abs/2607.01507)
 - AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution (Cell 2025) [[paper]](https://doi.org/10.1016/j.cell.2025.08.018)
 
-**SE4AISci work**
+**SE4AI4Sci work**
 
 - An AI Scientist that Doesn't Drift: Taste, Structure, and Falsifiable Findings in a Quadruped Navigation Research Loop (arXiv 2026) [[paper]](https://arxiv.org/abs/2608.07542)
 - Mitigating LLM-based p-Hacking by Preregistering for the Next LLM (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.27687)
@@ -114,7 +115,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - Likelihood Hacking in Probabilistic Program Synthesis (UAI 2026) [[paper]](https://arxiv.org/abs/2603.24126)
 - Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation (arXiv 2025) [[paper]](https://arxiv.org/abs/2509.08825)
 
-**SE4AISci work**
+**SE4AI4Sci work**
 
 - Sanity Checks for Agentic Data Science (arXiv 2026) [[paper]](https://arxiv.org/abs/2604.11003)
 
@@ -127,7 +128,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - Generated, Parallel, Scalable? A Study of Agentic AI-Generated Julia Code on Supercomputers (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.16534)
 - Can Large Language Models Write Parallel Code? (HPDC 2024) [[paper]](https://doi.org/10.1145/3625549.3658689) [[code]](https://github.com/parallelcodefoundry/ParEval)
 
-**SE4AISci work**
+**SE4AI4Sci work**
 
 - A Judge Agent Closes the Reliability Gap in AI-Generated Scientific Simulation (arXiv 2026) [[paper]](https://arxiv.org/abs/2603.25780)
 - SciCoQA: Quality Assurance for Scientific Paper-Code Alignment (ACL 2026) [[paper]](https://arxiv.org/abs/2601.12910)
@@ -141,7 +142,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - Benchmarking large language models on safety risks in scientific laboratories (Nature Machine Intelligence 2026) [[paper]](https://doi.org/10.1038/s42256-025-01152-1)
 - The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (arXiv 2024) [[paper]](https://arxiv.org/abs/2408.06292) [[code]](https://github.com/SakanaAI/AI-Scientist)
 
-**SE4AISci work**
+**SE4AI4Sci work**
 
 - Safe-SDL: Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories (arXiv 2026) [[paper]](https://arxiv.org/abs/2602.15061)
 - SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.08234)
@@ -161,7 +162,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - Artificial Intelligence-Assisted Data Extraction With a Large Language Model: A Study Within Reviews (Annals of Internal Medicine 2025) [[paper]](https://doi.org/10.7326/ANNALS-25-00739)
 - CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs (NeurIPS 2024) [[paper]](https://arxiv.org/abs/2406.18521) [[code]](https://github.com/princeton-nlp/CharXiv)
 
-**SE4AISci work**
+**SE4AI4Sci work**
 
 - Verifying LLM-extracted text with token alignment (bioRxiv 2026) [[paper]](https://doi.org/10.64898/2026.02.06.704502)
 - ControlA: Agentic Workflow Control Mechanisms for Reliable Science (eScience 2025) [[paper]](https://doi.org/10.1109/eScience65000.2025.00086)
@@ -188,7 +189,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - Generalization bias in large language model summarization of scientific research (Royal Society Open Science 2025) [[paper]](https://doi.org/10.1098/rsos.241776)
 - Challenges in High-Throughput Inorganic Materials Prediction and Autonomous Synthesis (PRX Energy 2024) [[paper]](https://doi.org/10.1103/PRXEnergy.3.011002)
 
-**SE4AISci work**
+**SE4AI4Sci work**
 
 - Beyond the Text: Verifying That Agent-Written Papers Are Backed by Their Artifacts (arXiv 2026) [[paper]](https://arxiv.org/abs/2609.22111)
 - EviGraph: Evidence-Guided Autonomous Research Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2608.04738)

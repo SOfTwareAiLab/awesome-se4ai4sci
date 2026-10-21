@@ -1,6 +1,6 @@
 # Scientific Software Catalogue
 
-A catalogue of widely used scientific software packages, grouped by domain. It accompanies the [Awesome SE4AISci](README.md) list. Packages that already expose an agent interface are listed in the README under [Agent-ready scientific software](README.md#agent-ready-scientific-software).
+A catalogue of widely used scientific software packages, grouped by domain. It accompanies the [Awesome SE4AI4Sci](README.md) list. Packages that already expose an agent interface are listed in the README under [Agent-ready scientific software](README.md#agent-ready-scientific-software).
 
 ## Contents
 

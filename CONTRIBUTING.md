@@ -18,12 +18,12 @@ Not included: general LLM, agent or AI-safety papers that only document model be
 
 ## Where a chain entry goes
 
-The list separates two eras. SE4AISci work is about scientific processes in which an AI system takes part in a scientific decision; SE4Science work is about software that implements decisions made by people. The test is whether the problem the paper studies would still exist if the AI system were replaced by a careful human researcher. If it would, the paper is a foundation, not SE4AISci work.
+The list separates two eras. SE4AI4Sci work is about scientific processes in which an AI system takes part in a scientific decision; SE4Science work is about software that implements decisions made by people. The test is whether the problem the paper studies would still exist if the AI system were replaced by a careful human researcher. If it would, the paper is a foundation, not SE4AI4Sci work.
 
 Each of the six stages of the Scientific Assurance Chain separates its entries into two groups:
 
 - **Where it breaks**: documented failures of AI systems doing scientific work at that stage (incidents, audits, case studies, and evaluations whose headline is the failure).
-- **SE4AISci work**: techniques, tools, protocols and assurance-targeted benchmarks built for AI-driven scientific workflows.
+- **SE4AI4Sci work**: techniques, tools, protocols and assurance-targeted benchmarks built for AI-driven scientific workflows.
 
 Pick the stage whose assurance problem the work addresses, then the group. A failure study that spans several stages goes under Cross-cutting failures.
 
@@ -73,7 +73,7 @@ Rules:
 
 - One topic per pull request. Several entries for the same section are fine.
 - Update the "updated" badge at the top of README.md.
-- Keep the section titles and the two group labels under each stage unchanged. They follow the wording of the SE4AISci vision paper.
+- Keep the section titles and the two group labels under each stage unchanged. They follow the wording of the SE4AI4Sci vision paper.
 - Run a link check locally before opening the pull request, for example with `lychee README.md`, or state in the description that each link was opened by hand.
 
 ## Suggesting without a pull request
