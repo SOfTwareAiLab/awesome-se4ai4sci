@@ -429,6 +429,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - MMSciCode: Real-world Evaluation of Multilingual Multi-Discipline Scientific Research Coding (ACL 2026) [[paper]](https://doi.org/10.18653/v1/2026.acl-long.1566)
 - SciCodePile: A 128GB Corpus and Executable Benchmark for Challenging Scientific Code Generation (arXiv 2026) [[paper]](https://arxiv.org/abs/2607.19104)
 - SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? (arXiv 2026) [[paper]](https://arxiv.org/abs/2608.19799)
+- Terminal-Bench-Science: Evaluating AI Agents on Research Workflows across Scientific Domains (Stanford / Terminal-Bench 2026) [[website]](https://www.tbench.ai/science) [[code]](https://github.com/harbor-framework/terminal-bench-science)
 - AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs? (NeurIPS Datasets and Benchmarks 2025) [[paper]](https://arxiv.org/abs/2507.15887)
 - ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery (ICLR 2025) [[paper]](https://arxiv.org/abs/2410.05080) [[code]](https://github.com/OSU-NLP-Group/ScienceAgentBench)
 - BioCoder: a benchmark for bioinformatics code generation with large language models (Bioinformatics 2024) [[paper]](https://doi.org/10.1093/bioinformatics/btae230) [[code]](https://github.com/gersteinlab/biocoder)
