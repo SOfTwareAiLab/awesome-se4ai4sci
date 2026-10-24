@@ -20,7 +20,7 @@ Correct code is necessary, but trustworthy scientific claims require much more.
 
 ## The Scientific Assurance Chain
 
-The chain models the path from a scientific question to a scientific claim as a sequence of transformations: intent is operationalised into an experimental design; its computational components are realised in software; the experiment is carried out in a concrete setting; execution produces evidence; and that evidence is interpreted as a scientific claim. Each stage creates a different assurance problem, and each transition carries an assurance obligation to preserve intent, assumptions, constraints and provenance. Local correctness at one stage therefore does not imply correctness of the scientific process as a whole.
+The chain captures the path from a scientific question to the claim ultimately produced from it. Each stage creates a different assurance problem, and failures can propagate even when later software behaves correctly.
 
 The sections below organise related work around two questions:
 
