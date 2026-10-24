@@ -38,8 +38,6 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 | **Evidence** | The observations the experiment produced, with their provenance and uncertainty | Data-pipeline testing and contracts for units, ranges and transformations; traceability from extracted values to their sources |
 | **Claim** | The scientific interpretation of the evidence | Claim-to-evidence traceability in generated reports; consistency checks for contradictions and unsupported generalisations |
 
-As shown in the figure above, requirements engineering captures intent and method constraints; testing and verification check implementations and executions; and traceability and computational reproducibility connect results and claims to recorded artefacts. Failed checks motivate fault localisation, and automated program repair proposes candidate fixes that require re-testing and revalidation before reintegration. Traceability and reproducibility record how artefacts are connected, but do not by themselves establish scientific validity.
-
 ## Contents
 
 - [Scientific Assurance Chain](#scientific-assurance-chain)
