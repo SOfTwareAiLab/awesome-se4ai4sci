@@ -8,7 +8,7 @@ An entry qualifies if it does at least one of the following:
 
 - builds, evaluates or critiques an AI system that does scientific work (hypothesis generation, experiment design, code, execution, analysis, writing);
 - documents a failure, risk or research-integrity threat of such systems;
-- supplies a software engineering technique for any stage of the scientific assurance chain (intent, workflow, implementation, execution, evidence, claim);
+- supplies a software engineering technique for any stage of the scientific assurance chain (intent, experimental design, implementation, execution, evidence, claim);
 - forms part of SE4Science or research software engineering;
 - is a benchmark or evaluation study of AI research agents.
 

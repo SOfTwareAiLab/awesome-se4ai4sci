@@ -2,7 +2,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Last updated](https://img.shields.io/badge/updated-2026--10--12-blue.svg)](#contributing)
+[![Last updated](https://img.shields.io/badge/updated-2026--10--24-blue.svg)](#contributing)
 
 A curated list of papers, systems, benchmarks and resources on **Software Engineering for AI-Driven Science (SE4AI4Sci)**: assuring the scientific process, not only the software that implements it.
 
@@ -10,11 +10,11 @@ A curated list of papers, systems, benchmarks and resources on **Software Engine
 
 ![The Scientific Assurance Chain](assets/chain.png)
 
-AI is beginning to do science, not just support it. Software can now help choose methods, run experiments, interpret evidence and formulate scientific claims.
+AI is beginning to do science, not just support it. Autonomous agents can now help choose methods, generate hypotheses, modify workflows, write and execute experimental code, and interpret the evidence they produce.
 
 **SE4AI4Sci** studies how software engineering can help make these scientific processes more explicit, checkable and traceable. Its organising framework is the **Scientific Assurance Chain**:
 
-<p align="center"><em>Intent &rarr; Workflow &rarr; Implementation &rarr; Execution &rarr; Evidence &rarr; Claim</em></p>
+<p align="center"><em>Intent &rarr; Experimental Design &rarr; Implementation &rarr; Execution &rarr; Evidence &rarr; Claim</em></p>
 
 Correct code is necessary, but trustworthy scientific claims require much more.
 
@@ -31,19 +31,19 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 
 | Stage | What is assured | SE techniques |
 |---|---|---|
-| **Intent** | The scientific question, its assumptions and scope | Requirements engineering; scope and traceability |
-| **Workflow** | The experimental procedure: methods, data and controls | Executable workflow specifications; methodological contracts; provenance |
-| **Implementation** | The code, tools and infrastructure that realise the procedure | Integration testing; executable experiment requirements; specification-to-code traceability |
-| **Execution** | Running the experiment inside a concrete environment and its boundaries | Sandboxing; capability restrictions; resource quotas; runtime monitoring |
-| **Evidence** | The results and their provenance: what a run actually produced | Input validation; uncertainty tracking; provenance linking values to their source |
-| **Claim** | The scientific conclusion drawn from the evidence | Evidence-to-claim traceability; automated consistency checks |
+| **Intent** | The scientific question, its assumptions and scope | Requirements engineering; requirements-to-artefact traceability |
+| **Experimental Design** | Methods, baselines, subjects or datasets, controls, metrics and analysis procedures, including any computational workflow | Specifications, contracts and provenance that make procedural deviations detectable; dataset selection and controls encoded as checkable constraints |
+| **Implementation** | The software that realises the computational components of the design | Testing and verification connected to the intended method; fault localisation and automated program repair |
+| **Execution** | Carrying out the experiment in a concrete setting, possibly combining computation, physical experiments and human-participant studies | Sandboxing; capability restrictions; resource policies; runtime monitoring and verification of agent actions |
+| **Evidence** | The observations the experiment produced, with their provenance and uncertainty | Data-pipeline testing and contracts for units, ranges and transformations; traceability from extracted values to their sources |
+| **Claim** | The scientific interpretation of the evidence | Claim-to-evidence traceability in generated reports; consistency checks for contradictions and unsupported generalisations |
 
 ## Contents
 
 - [Scientific Assurance Chain](#scientific-assurance-chain)
   - [Cross-cutting failures](#cross-cutting-failures)
   - [Intent](#intent)
-  - [Workflow](#workflow)
+  - [Experimental Design](#experimental-design)
   - [Implementation](#implementation)
   - [Execution](#execution)
   - [Evidence](#evidence)
@@ -105,7 +105,7 @@ Techniques and evidence that predate AI-driven science, from SE4Science, scienti
 - Preregistration for Experiments with AI Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2606.11217)
 - Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents (arXiv 2026) [[paper]](https://arxiv.org/abs/2607.09195)
 
-### Workflow
+### Experimental Design
 
 **Where it breaks**
 
@@ -490,7 +490,7 @@ SE4Science has long studied how to engineer software used for science, together 
 - The preregistration revolution (PNAS 2018) [[paper]](https://doi.org/10.1073/pnas.1708274114)
 - Systematic Development of Requirements Documentation for General Purpose Scientific Computing Software (RE 2006) [[paper]](https://doi.org/10.1109/re.2006.61)
 
-**Workflow**
+**Experimental Design**
 
 - Towards Generating Contracts for Scientific Data Analysis Workflows (SC24-W 2024) [[paper]](https://doi.org/10.1109/SCW63240.2024.00256)
 - Boba: Authoring and Visualizing Multiverse Analyses (IEEE TVCG 2021) [[paper]](https://doi.org/10.1109/TVCG.2020.3028985) [[code]](https://github.com/uwdata/boba)
